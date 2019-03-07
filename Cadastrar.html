@@ -30,9 +30,10 @@
         </p>
       </div>
     <div id="corpo">
-        <h1>Nova Receita</h1>
-      <p><label for="nome">Nome da receita:
-        <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" " size=50" />
+      <h1>Nova Receita</h1>
+        <form action="salvar.jsp" method="post">
+          <p><label for="nome">Nome da receita:
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" " size=50" />
       </label></p>
       <p>
         <label for="descricao">Descrição da receita:
@@ -70,7 +71,7 @@
       </fildset>
     </p>
     <p>
-      <h5>Ingredientes adicionados</h5>
+      <h4>Ingredientes adicionados</h4>
       <table>
         <thead>
           <tr>
@@ -89,10 +90,65 @@
     </table>
   </p>
   <p>
-    <label for="mododepreparo">
-      <textarea nome="Modo-De-Preparo" placeholder="Diite o modo de preparo" cols="50" rows="10"></textarea>
+    <label for="mododepreparo">Descrição da receita:
+      <textarea nome="Modo-De-Preparo" placeholder="Digite o modo de preparo" cols="50" rows="10"></textarea>
+    </label>
+  </p>
+  <p>
+    Dificuldade:
+    <input id="facil" type="radio" name="dificuldade" value="f" />
+    <label for="facil">Fácil</label>
+    <input id="medio" type="radio" name="dificuldade" value="m" />
+    <label for="medio">Médio</label>
+    <input id="dificil" type="radio" name="dificuldade" value="D" />
+    <label for="dificil">Dificio</label>
+  </p>
+    <p>
+      Tempo de Preparo<input type=number name="Tempo de preparo" />
+      <select name="Unidade-tempo">
+        <option value="min">Minutos</option>
+        <option value="h">Horas</option>
+        <option value="d">Dias</option>
+      </select>
+    </p>
+    <p>
+        Rendimentos: <input type="Number" name="rendimento" min="1" max="100" />
+        porções
+    </p>
+    <p>
+      <table>
+        <tr>
+          <td>
+            <label>
+              <input type="checkbox" name="acompanhamentos" value="arroz"  />
+              arroz
+            </label>
+          </td>
+        </tr>
+          <tr>
+            <td>
+              <label>
+                <input type="checkbox" name="acompanhamentos" value="feijao"  />
+                feijão
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>
+            <input type="checkbox" name="acompanhamentos" value="Batata frita"  />
+            Batata frita
+          </label>
+        </td>
+      </tr>
+    </table>
+  </P>
+  <p>
+    <input type="submit" value="Salvar receita" />
+  </p>
+</form>
   </div>
-    <div id="rodape"></div>
+    <div id="rodape">
     <p id="Redes Sociais">
       <img src="img/facebook.png" />
       <img src="img/instagram.png" />

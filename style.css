@@ -1,0 +1,66 @@
+#banner{
+background-color: #9A2EFE;
+font-size: 30px;
+font-family: Verdana,Arial,sans-serif;
+color: #EFFBFB;
+padding: 20px;
+text-align: center;
+}
+#banner h1{
+font-size: 30px;
+font-family: Verdana,Arial,sans-serif;
+color: #EFFBFB;
+padding: 20px;
+text-align: center;
+}
+#banner h2{
+font-size: 20px;
+color: #EFFBFB;
+font-style: italic;
+
+}
+#menu ul{
+text-align: center;
+padding: 20px 0;
+background-color: #9F81F7;
+}
+#menu li{
+display: inline-block;
+border-right: 2px #030 solid;
+}
+#menu li:first-child{
+border-radius:
+}
+#menu li:last-child{
+border-right: none;
+}
+#menu a{
+text-decoration: none;
+color: white;
+font-size: 20px Arial;
+font-weight: 20px;
+}
+#menu a:hover{
+background-color: white;
+color: black;
+text-decoration: line-through;
+}
+#menu a:target{
+background-color:#666;
+}
+#Redes-Sociais img {
+height: 24px
+}
+#esquerda{
+background-color: purple;
+width: 60%;
+float: left;
+}
+#direita{
+background-color: green;
+width: 25%;
+float: right;
+}
+#rodape{
+clear: both;
+}
